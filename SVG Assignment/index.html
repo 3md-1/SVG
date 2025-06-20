@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crow Never Sleeps</title>
+    <style>
+        /* --- Basic Setup --- */
+        body {
+            /* Sets a dark background and white text color */
+            background-color: #121212;
+            color: #ffffff;
+            
+            /* Use a simple, clean font */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            
+            /* This is the key to centering the content vertically and horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            
+            /* Ensure text inside the container is centered */
+            text-align: center;
+        }
 
+        /* --- Content Container --- */
+        .container {
+            max-width: 90%;
+            padding: 20px;
+        }
+
+        /* --- Heading Style --- */
+        h1 {
+            font-size: clamp(2rem, 5vw, 2.5rem); /* Responsive font size */
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        /* --- SVG Image Style --- */
+        .crow-svg {
+            /* Set the size of your SVG */
+            width: 200px; 
+            height: auto;
+            
+            /* IMPORTANT: This CSS filter will make your SVG white.
+               It inverts the color, so a black SVG becomes white.
+               If your SVG is already white, you can remove this line.
+            */
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>The Crow Never Sleeps</h1>
+        
+        <img src="crow.svg.svg" alt="A centered icon of a crow" class="crow-svg">
+
+    </div>
+
+</body>
+</html>
